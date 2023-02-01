@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- page title -->
+    <title>Time Zone</title>
+    <!-- import Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- link stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- upper section of the page -->
+    <section id="section1">
+        <h1> TimeZone API </h1>
+        <h1 style="margin-top: 0;"> Your Current Time Zone </h1>
+        <div class="component">
+            <div>Name of the Time Zone: <span id="w1"> </span> </div>
+            <div>Lat: <span id="w2"> </span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Long: <span id="w10"> </span> </div>
+            <div>Offset STD: <span id="w3"> </span> </div>
+            <div>Offset STD Seconds: <span id="w4"> </span> </div>
+            <div>Offset DST: <span id="w5"> </span> </div>
+            <div>Offset DST Seconds: <span id="w6"> </span> </div>
+            <div>Country: <span id="w7"> </span> </div>
+            <div>Postcode: <span id="w8"> </span> </div>
+            <div>City: <span id="w9"> </span> </div>
+        </div>
+    </section>
+    <!-- lower section of the page -->
+    <section id="section2">
+        <h1>Enter Address</h1>
+        <input type="text" placeholder="Address">
+        <button type="submit">Submit</button>
+        <div id="errorMsg" style="display: none;"></div>
+        <h1 id="heading" style="display: none;">Your Result </h1>
+        <div class="component component1" id="newComponent" style="display: none;">
+            <div>Name of the Time Zone: <span id="m1"> </span> </div>
+            <div>Lat: <span id="m2"> </span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Long: <span id="m10"> </span> </div>
+            <div>Offset STD: <span id="m3"> </span> </div>
+            <div>Offset STD Seconds: <span id="m4"> </span> </div>
+            <div>Offset DST: <span id="m5"> </span> </div>
+            <div>Offset DST Seconds: <span id="m6"> </span> </div>
+            <div>Country: <span id="m7"> </span> </div>
+            <div>Postcode: <span id="m8"> </span> </div>
+            <div>City: <span id="m9"> </span> </div>
+        </div>
+    </section>
+    <!-- link js file -->
+    <script src="script.js"></script>
+</body>
+
+</html>

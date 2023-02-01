@@ -1,0 +1,25 @@
+Note: we are not using HTML5 Geolocation Api to fetch the user location
+      because this API will fetch the user's live location and for this,
+      user have to grant the location access to the browser, and turn on 
+      the device location as well. Else it will throw an error - 'unable to access'
+      
+//that's how we use HTML5 Geolocation API
+//check whether browser installed on user's device will support functionality or not
+if (!navigator.geolocation) {
+    console.log('Geolocation is not supported by your browser');
+  } 
+  else {
+    navigator.geolocation.getCurrentPosition(success, error);
+  }
+}
+
+//success function - it will run only if user will allow the browser to access the location and turn on the device location
+function success(position) {
+    console.log(position.coords.latitude);
+    console.log(position.coords.longitude);
+}
+
+//error function - it will run if user will not allow the browser to access the location
+function error() {
+    console.log('Unable to retrieve your location');
+}
